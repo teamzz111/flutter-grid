@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
+        fontFamily: 'Lato'
       ),
       home: Scaffold(appBar: AppBar(
         title: const Text("Testing Flutter"),

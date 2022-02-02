@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
+  DescriptionPlace(this.namePlace, this.stars, this.description, {Key? key}) : super(key: key);
+
+  String namePlace;
+  int stars;
+  String description;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +33,9 @@ class DescriptionPlace extends StatelessWidget {
           bottom: 20
         ),
 
-        child: const Text(
-          "data", 
-          style: TextStyle(
+        child: Text(
+          namePlace, 
+          style: const TextStyle(
             fontSize: 30.0,
             fontWeight: FontWeight.w900,
           ),
@@ -47,7 +52,6 @@ class DescriptionPlace extends StatelessWidget {
           star
         ],
       ),
-      
     ]
   );
 
@@ -57,11 +61,11 @@ class DescriptionPlace extends StatelessWidget {
       right: 20,
       bottom: 20
     ),
-    child: const Align(
+    child: Align(
       alignment: Alignment.center,
       child: Text(
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci felis, sagittis vitae nisl sed, interdum luctus nibh. Nullam ac dolor vitae risus pretium rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam vel est ante. Ut eu nisi rutrum, tempus velit vitae, iaculis tellus. Phasellus eget ligula sed elit eleifend gravida a quis ex. Duis vitae nisl ac ex euismod consectetur. Nullam vitae sem vel neque accumsan vestibulum.",
-        style: TextStyle(fontWeight: FontWeight.w300),
+        description,
+        style: const TextStyle(fontWeight: FontWeight.w300),
         ),
     )
   );

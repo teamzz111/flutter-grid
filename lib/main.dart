@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
+import 'gradient_background.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,14 +20,16 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         fontFamily: 'Lato'
       ),
-      home: Scaffold(appBar: AppBar(
-        title: const Text("Testing Flutter"),
-        ),
-        body: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: DescriptionPlace("Duwili San", 4, description),
+      home: Scaffold(
+        body: Stack(children: [
+          ListView(
+            children: [
+              DescriptionPlace("Bahamas", 4, description)
+            ],
+          ),
+          const GradientBackground(),
+        ])
         )
-      )
     );
   }
 }

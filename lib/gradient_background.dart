@@ -21,11 +21,11 @@ class GradientBackground extends StatelessWidget {
         ),
 
         child: const Text(
-          "Hola mundo",
+          "Bienvenido",
           style: TextStyle(
             color: Colors.white,
             fontSize: 30.0,
-          fontWeight: FontWeight.w900
+            fontWeight: FontWeight.w900
           ),
         ),
 

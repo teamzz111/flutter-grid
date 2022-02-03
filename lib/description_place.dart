@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:grid/review.dart';
 class DescriptionPlace extends StatelessWidget {
   DescriptionPlace(this.namePlace, this.stars, this.description, {Key? key}) : super(key: key);
 
@@ -74,7 +74,10 @@ class DescriptionPlace extends StatelessWidget {
     return Column(
       children: [
         titleStars,
-        descriptionText
+        descriptionText,
+        Review("assets/people.jpeg", "Andrés Largo", "1 review - quiere morir", "dicen que embeces socio"),
+        Review("assets/people.jpeg", "Embeces Largo", "1 review - quiere morir", "dicen que embeces socio")
+
       ],
     );
   }

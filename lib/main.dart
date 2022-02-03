@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grid/header_appbar.dart';
 import 'description_place.dart';
 import 'gradient_background.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
               DescriptionPlace("Bahamas", 4, description)
             ],
           ),
-          const GradientBackground(),
+          const HeaderAppBar()
         ])
         )
     );

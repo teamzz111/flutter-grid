@@ -18,7 +18,29 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         fontFamily: 'Lato'
       ),
-      home: Home()
+      home: Scaffold(
+        bottomNavigationBar: Theme(data: Theme.of(context).copyWith(
+          canvasColor: Colors.white,
+          primaryColor: Colors.purple
+        ), 
+        child: BottomNavigationBar(
+          items: const[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home"
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: "Search"
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: "Search"
+            ),
+          ],
+        )
+        ),
+      )
     );
   }
 }

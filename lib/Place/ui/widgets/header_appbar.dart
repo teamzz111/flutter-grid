@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grid/card_list.dart';
+import 'package:grid/Place/ui/widgets/card_list.dart';
 import 'gradient_background.dart';
 
 class HeaderAppBar extends StatelessWidget {

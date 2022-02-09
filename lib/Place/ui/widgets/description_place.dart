@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grid/button.dart';
-import 'package:grid/review.dart';
+import 'package:grid/widgets/button.dart';
+import 'package:grid/Place/ui/widgets/review.dart';
 class DescriptionPlace extends StatelessWidget {
   DescriptionPlace(this.namePlace, this.stars, this.description, {Key? key}) : super(key: key);
 

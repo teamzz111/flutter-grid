@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grid/floating_button.dart';
+import 'package:grid/widgets/floating_button.dart';
 
 class CardImage extends StatelessWidget {
   CardImage(this.pathImage, {Key? key}) : super(key: key);

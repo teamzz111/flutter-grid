@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'description_place.dart';
-import 'header_appbar.dart';
+import '../widgets/description_place.dart';
+import '../widgets/header_appbar.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);

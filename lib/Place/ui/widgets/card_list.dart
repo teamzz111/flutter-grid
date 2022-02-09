@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grid/card_image.dart';
+import 'package:grid/Place/ui/widgets/card_image.dart';
 
 class CardList extends StatelessWidget {
   const CardList({Key? key}) : super(key: key);
